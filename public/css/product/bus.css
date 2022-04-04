@@ -1,0 +1,36 @@
+/* nav */
+span {
+    font-size: 2px;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+ul.nav {
+    background-color: rgb(163, 63, 63);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.nav .nav-item {
+    padding: 5px;
+}
+
+ul.nav a {
+    color: rgb(0, 0, 0);
+}
+/* End Nav */
+
+/* Body */
+.card-img-top {
+    padding: 10px;
+    height: 300px;
+    width: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 130px;
+    background-clip: content-box;
+}
+
+/* End Body */

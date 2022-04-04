@@ -1,0 +1,123 @@
+/* import the fonts needed */
+@import url("https://fonts.googleapis.com/css?family=Cookie");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body settings */
+.faqbody {
+    margin-top: 3em;
+    z-index: -1000;
+    width: 100vw;
+    height: 100vh;
+    font-family: Trebuchet MS, Charcoal, sans-serif;
+    font-size: 120%;
+    color: #0c1323;
+}
+
+.content {
+    width: 80%;
+    padding: 20px;
+    margin: 0 auto;
+    padding: 0 60px 0 0;
+}
+
+.centerplease {
+    margin: 0 auto;
+    width: 100vw;
+    font-size: 150%;
+    text-align: center;
+    margin-top: 3em;
+    padding: 5px;
+}
+
+.question {
+    position: relative;
+    background: #0c1323;
+    margin: 0;
+    padding: 10px 10px 10px 50px;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    color: white;
+}
+
+.answers {
+    background: rgb(221, 221, 221);
+    padding: 0px 15px;
+    margin: 5px 0;
+    height: 0;
+    overflow: hidden;
+    z-index: 15;
+    position: relative;
+    opacity: 0;
+    -webkit-transition: 0.7s ease;
+    -moz-transition: 0.7s ease;
+    -o-transition: 0.7s ease;
+    transition: 0.7s ease;
+}
+
+.questions:checked ~ .answers {
+    height: auto;
+    opacity: 1;
+    padding: 15px;
+}
+
+.plus {
+    position: absolute;
+    color: white;
+    margin-left: 10px;
+    z-index: 15;
+    font-size: 2em;
+    line-height: 100%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.questions:checked ~ .plus {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.questions {
+    display: none;
+}
+/* end of body settings */
+
+/* nav */
+span {
+    font-size: 2px;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+ul.nav {
+    background-color: rgb(163, 63, 63);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.nav .nav-item {
+    padding: 5px;
+}
+
+ul.nav a {
+    color: rgb(0, 0, 0);
+}
+/* End Nav */
