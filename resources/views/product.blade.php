@@ -64,17 +64,17 @@
         <div class="row">
 
             <div class="col-lg-4 col-md-6 my-lg-0 my-3">
-                <a href="product/bus">
+                <a href="product/mobilkecil">
                     <div class="box bg-white">
                         <div class="d-flex align-items-center">
                             <div
                                 class="rounded-circle mx-3 text-center d-flex align-items-center justify-content-center blue">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Bus-logo.svg/1200px-Bus-logo.svg.png"
+                                <img src="https://cdn1.iconfinder.com/data/icons/ios-11-glyphs/30/car-512.png"
                                     alt="">
                             </div>
                             <div class="d-flex flex-column">
-                                <b>Bus</b>
-                                <p class="text-muted">2 Items</p>
+                                <b>Mobil Kecil</b>
+                                <!-- <p class="text-muted">2 Items</p> -->
                             </div>
                         </div>
                     </div>
@@ -90,8 +90,8 @@
                                 <img src="https://cdn1.iconfinder.com/data/icons/ios-11-glyphs/30/car-512.png" alt="">
                             </div>
                             <div class="d-flex flex-column">
-                                <b>Minibus</b>
-                                <p class="text-muted">3 Items</p>
+                                <b>Mobil Besar</b>
+                                <!-- <p class="text-muted">3 Items</p> -->
                             </div>
                         </div>
                     </div>
@@ -104,18 +104,18 @@
                         <div class="d-flex ali  gn-items-center">
                             <div
                                 class="rounded-circle mx-3 d-flex align-items-center justify-content-center pale-purple">
-                                <img src="http://cdn.onlinewebfonts.com/svg/img_189956.png" alt="">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Bus-logo.svg/1200px-Bus-logo.svg.png" alt="">
                             </div>
                             <div class="d-flex flex-column">
-                                <b>Motorcycle</b>
-                                <p class="text-muted">2 Items</p>
+                                <b>Minibus</b>
+                                <!-- <p class="text-muted">2 Items</p> -->
                             </div>
                         </div>
                     </div>
                 </a>
             </div>
 
-            <div class="col-lg-4 col-md-6 my-lg-3 my-3">
+            <!-- <div class="col-lg-4 col-md-6 my-lg-3 my-3">
                 <a href="google.com">
                     <div class="box bg-white">
                         <div class="d-flex align-items-center">
@@ -165,7 +165,7 @@
                         </div>
                     </div>
                 </a>
-            </div>
+            </div> -->
         </div>
         <!-- End Content List -->
 </body>

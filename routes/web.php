@@ -3,6 +3,7 @@
 use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegisterController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -31,7 +32,9 @@ Route::get('/gallery', 'App\Http\Controllers\GalleryController@index');
 Route::get('/review', 'App\Http\Controllers\ReviewController@index');
 Route::get('/faq', 'App\Http\Controllers\FAQController@index');
 Route::get('/contactus', 'App\Http\Controllers\ContactUsController@index');
-Route::get('/product/bus', 'App\Http\Controllers\ProductItemController@index');
+// Route::get('/product/bus', 'App\Http\Controllers\ProductItemController@index');
+// Route::get('/product/bus', 'App\Http\Controllers\MobilKecilController@index');
+Route::resource('/product/mobilkecil', App\Http\Controllers\MobilKecilController::class);
 Route::get(
     '/product/minibus',
     'App\Http\Controllers\ProductItemController@index'
