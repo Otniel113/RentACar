@@ -27,7 +27,7 @@
                     <a class="nav-link" href="product">Catalog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="review">Review</a>
+                    <a class="nav-link" href="review">Profile</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="gallery">Gallery</a>
@@ -65,112 +65,34 @@
 
     <div class="container">
 
-        <h2 style="text-align: center;">Review</h2>
-        <p style="text-align: center;">This is<strong> our </strong>review from customer</p>
-
-        <div class="card-deck">
-            <div class="card bg-dark text-white">
-                <div class="card-body text-left">
-                    <div>
-                        <img class="card-img-top"
-                            src="https://upload.wikimedia.org/wikipedia/commons/6/62/ArielNOAH.jpg"
-                            alt="Mamang Ariel Noah">
-                    </div>
-                    <p class="card-text">Name : Winicontol</p>
-                    <p class="card-text">Asal : Jakarta</p>
-                    <p class="card-text">Review : Good</p>
-                </div>
+        <h2 style="text-align: center;">Profile</h2>
+        <div class="row justify-content-center" style="margin-top:13%">
+            <div class="col-10">
+                <span class="float-left">{{ session('msg') }}</span>
+                <table class="table table-bordered table-striped">
+                    <tr>
+                        <th>Name</th>
+                        <th>E-mail</th>
+                        <th>Username</th>
+                        <th>Aksi</th>
+                    </tr>
+                    @foreach($list as $d)
+                    <tr>
+                        <td>{{ $d->name }}</td>
+                        <td>{{ $d->email }}</td>
+                        <td>{{ $d->username }}</td>
+                        <td>
+                        <form method="post" action="/review/{{ $d->id }}"
+                            style="display:inline" onsubmit="return confirm('Yakin hapus?')">
+                            @csrf
+                            @method('DELETE')
+                            <button class="btn btn-danger">Hapus</button>
+                        </form>
+                        </td>
+                    </tr>
+                    @endforeach
+                </table>
             </div>
-
-            <div class="card bg-dark text-white">
-                <div class="card-body text-left">
-                    <div>
-                        <img class="card-img-top"
-                            src="https://upload.wikimedia.org/wikipedia/commons/6/62/ArielNOAH.jpg"
-                            alt="Mamang Ariel Noah">
-                    </div>
-                    <p class="card-text">Name : Winicontol</p>
-                    <p class="card-text">Asal : Jakarta</p>
-                    <p class="card-text">Review : Good</p>
-                </div>
-            </div>
-
-            <div class="card bg-dark text-white">
-                <div>
-                    <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/6/62/ArielNOAH.jpg"
-                        alt="Mamang Ariel Noah">
-                </div>
-                <div class="card-body text-left">
-                    <p class="card-text">Name : Winicontol</p>
-                    <p class="card-text">Asal : Jakarta</p>
-                    <p class="card-text">Review : Good</p>
-                </div>
-            </div>
-
-            <div class="card bg-dark text-white">
-                <div>
-                    <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/6/62/ArielNOAH.jpg"
-                        alt="Mamang Ariel Noah">
-                </div>
-                <div class="card-body text-left">
-                    <p class="card-text">Name : Winicontol</p>
-                    <p class="card-text">Asal : Jakarta</p>
-                    <p class="card-text">Review : Good</p>
-                </div>
-            </div>
-        </div> <br>
-
-        <div class="card-deck">
-            <div class="card bg-dark text-white">
-                <div class="card-body text-left">
-                    <div>
-                        <img class="card-img-top"
-                            src="https://upload.wikimedia.org/wikipedia/commons/6/62/ArielNOAH.jpg"
-                            alt="Mamang Ariel Noah">
-                    </div>
-                    <p class="card-text">Name : Winicontol</p>
-                    <p class="card-text">Asal : Jakarta</p>
-                    <p class="card-text">Review : Good</p>
-                </div>
-            </div>
-
-            <div class="card bg-dark text-white">
-                <div class="card-body text-left">
-                    <div>
-                        <img class="card-img-top"
-                            src="https://upload.wikimedia.org/wikipedia/commons/6/62/ArielNOAH.jpg"
-                            alt="Mamang Ariel Noah">
-                    </div>
-                    <p class="card-text">Name : Winicontol</p>
-                    <p class="card-text">Asal : Jakarta</p>
-                    <p class="card-text">Review : Good</p>
-                </div>
-            </div>
-
-            <div class="card bg-dark text-white">
-                <div>
-                    <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/6/62/ArielNOAH.jpg"
-                        alt="Mamang Ariel Noah">
-                </div>
-                <div class="card-body text-left">
-                    <p class="card-text">Name : Winicontol</p>
-                    <p class="card-text">Asal : Jakarta</p>
-                    <p class="card-text">Review : Good</p>
-                </div>
-            </div>
-
-            <div class="card bg-dark text-white">
-                <div>
-                    <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/6/62/ArielNOAH.jpg"
-                        alt="Mamang Ariel Noah">
-                </div>
-                <div class="card-body text-left">
-                    <p class="card-text">Name : Winicontol</p>
-                    <p class="card-text">Asal : Jakarta</p>
-                    <p class="card-text">Review : Good</p>
-                </div>
-            </div>
-        </div> <br>
     </div>
 
 </body>

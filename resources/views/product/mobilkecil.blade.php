@@ -18,7 +18,7 @@
                         <a class="nav-link" href="{{ ('/product') }}">Catalog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ ('/review') }}">Review</a>
+                        <a class="nav-link" href="{{ ('/review') }}">Profile</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ ('/gallery') }}">Gallery</a>

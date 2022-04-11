@@ -29,12 +29,13 @@ Route::post('/logout', [LoginController::class, 'logout']);
 Route::get('/home', 'App\Http\Controllers\BackRegisterController@index');
 Route::get('/product', 'App\Http\Controllers\ProductController@index');
 Route::get('/gallery', 'App\Http\Controllers\GalleryController@index');
-Route::get('/review', 'App\Http\Controllers\ReviewController@index');
+// Route::get('/review', 'App\Http\Controllers\ReviewController@index');
 Route::get('/faq', 'App\Http\Controllers\FAQController@index');
 Route::get('/contactus', 'App\Http\Controllers\ContactUsController@index');
 // Route::get('/product/bus', 'App\Http\Controllers\ProductItemController@index');
 // Route::get('/product/bus', 'App\Http\Controllers\MobilKecilController@index');
 Route::resource('/product/mobilkecil', App\Http\Controllers\MobilKecilController::class);
+Route::resource('/review', App\Http\Controllers\MemberController::class);
 Route::get(
     '/product/minibus',
     'App\Http\Controllers\ProductItemController@index'
