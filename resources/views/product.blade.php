@@ -101,7 +101,7 @@
             </div>
 
             <div class="col-lg-4 col-md-6 my-lg-0 my-3">
-                <a href="google.com">
+                <a href="product/minibus">
                     <div class="box bg-white">
                         <div class="d-flex align-items-center">
                             <div

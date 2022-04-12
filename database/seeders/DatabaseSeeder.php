@@ -17,5 +17,6 @@ class DatabaseSeeder extends Seeder
         $this->call(MembersTableSeeder::class);
         $this->call(AdminTableSeeder::class);
         $this->call(MobilbesarsTableSeeder::class);
+        $this->call(MinibussTableSeeder::class);
     }
 }
