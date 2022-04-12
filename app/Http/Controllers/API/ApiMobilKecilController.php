@@ -1,21 +1,21 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\API;
 
 use Illuminate\Http\Request;
 use App\Models\MobilKecil;
 
-class MobilKecilController extends Controller
+class ApiMobilKecilController
 {
     public function index()
     {
         $prods = MobilKecil::get();
-        return view('product.mobilkecil', ['list' => $prods]);
+        return $prods;
     }
 
     public function create()
     {
-        return view('product.form', [
+        return ([
         'title' => 'Tambah',
         'method' => 'POST',
         'action' => 'product/mobilkecil'
@@ -31,7 +31,7 @@ class MobilKecilController extends Controller
         $prod->wisata = $request->wisata;
         $prod->ketersediaan = $request->ketersediaan;
         $prod->save();
-        return redirect('/product/mobilkecil')->with('msg', 'Tambah berhasil');
+        return $prod;
     }
 
     public function show($id)
@@ -41,7 +41,7 @@ class MobilKecilController extends Controller
 
     public function edit($id)
     {
-        return view('product.form', [
+        return ([
         'title' => 'Edit',
         'method' => 'PUT',
         'action' => "product/mobilkecil/$id",
@@ -58,7 +58,7 @@ class MobilKecilController extends Controller
         $prod->wisata = $request->wisata;
         $prod->ketersediaan = $request->ketersediaan;
         $prod->save();
-        return redirect('/product/mobilkecil')->with('msg', 'Edit berhasil');
+        return $prod;
     }
 
     public function destroy($id)
@@ -67,6 +67,6 @@ class MobilKecilController extends Controller
         // atau
         /* $prod = Product::find($id);
         $prod->delete(); */
-        return redirect('/product/mobilkecil')->with('msg', 'Hapus berhasil');
+        return null;
     }
 }
