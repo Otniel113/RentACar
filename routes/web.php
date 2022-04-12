@@ -32,8 +32,6 @@ Route::post('/logout', [LoginController::class, 'logout']);
 
 Route::get('/home', 'App\Http\Controllers\BackRegisterController@index');
 Route::get('/product', 'App\Http\Controllers\ProductController@index');
-Route::get('/gallery', 'App\Http\Controllers\GalleryController@index');
-Route::get('/faq', 'App\Http\Controllers\FAQController@index');
 Route::get('/contactus', 'App\Http\Controllers\ContactUsController@index');
 Route::resource(
     '/product/mobilkecil',
