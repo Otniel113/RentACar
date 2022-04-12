@@ -20,3 +20,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::resource('/product/mobilkecil', App\Http\Controllers\API\ApiMobilKecilController::class);
 Route::resource('/profile', App\Http\Controllers\API\ApiMemberController::class);
+Route::resource('/product/mobilbesar', App\Http\Controllers\API\ApiMobilBesarController::class);
