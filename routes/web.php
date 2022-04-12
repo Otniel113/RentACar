@@ -32,4 +32,5 @@ Route::get('/gallery', 'App\Http\Controllers\GalleryController@index');
 Route::get('/faq', 'App\Http\Controllers\FAQController@index');
 Route::get('/contactus', 'App\Http\Controllers\ContactUsController@index');
 Route::resource('/product/mobilkecil', App\Http\Controllers\MobilKecilController::class);
+Route::resource('/product/mobilbesar', App\Http\Controllers\MobilBesarController::class);
 Route::resource('/profile', App\Http\Controllers\MemberController::class);

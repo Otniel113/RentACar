@@ -17,9 +17,11 @@
                 <li class="nav-item">
                     <a class="nav-link" href="product">Product</a>
                 </li>
+                @auth
                 <li class="nav-item">
                     <a class="nav-link" href="profile">Profile</a>
                 </li>
+                @endauth
                 <li class="nav-item">
                     <a class="nav-link" href="gallery">Gallery</a>
                 </li>
@@ -82,7 +84,7 @@
             </div>
 
             <div class="col-lg-4 col-md-6 my-lg-0 my-3">
-                <a href="product">
+                <a href="product/mobilbesar">
                     <div class="box bg-white">
                         <div class="d-flex align-items-center">
                             <div
@@ -101,7 +103,7 @@
             <div class="col-lg-4 col-md-6 my-lg-0 my-3">
                 <a href="google.com">
                     <div class="box bg-white">
-                        <div class="d-flex ali  gn-items-center">
+                        <div class="d-flex align-items-center">
                             <div
                                 class="rounded-circle mx-3 d-flex align-items-center justify-content-center pale-purple">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Bus-logo.svg/1200px-Bus-logo.svg.png" alt="">

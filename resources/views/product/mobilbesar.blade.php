@@ -65,44 +65,12 @@
     <!-- Content 1 -->
     <div class="container">
 
-        <!-- <div class="card-deck">
-            <a href="{{ '/product/busdetails1' }}">
-                <div class="card bg-dark">
-                    <div class="card-body text-left">
-                        <div>
-                            <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/6/63/LT_471_%28LTZ_1471%29_Arriva_London_New_Routemaster_%2819522859218%29.jpg" alt="Bus Image 1">
-                        </div>
-                        <p class="card-text" style="color: white;">Bus Size : Large</p>
-                        <p class="card-text" style="color: white;">Capacity : 52 Seats</p>
-                        <p class="card-text" style="color: white;">Fuel     : Solar</p>
-                    </div>
-                    <a href="{{ '/product/busdetails1' }}" align="center">
-                        <button type="button" class="btn btn-info">View More Details</button>
-                    </a><br>
-                </div>
-            </a>
-
-            <a href="https://google.com">
-                <div class="card bg-dark">
-                    <div class="card-body text-left">
-                        <div>
-                            <img class="card-img-top" src="https://www.busbeetrans.co.id/assets/images/bus/add/medium_bus_legrest_9ec.jpg" alt="Bus Image 2">
-                        </div>
-                        <p class="card-text" style="color: white;">Bus Size : Medium</p>
-                        <p class="card-text" style="color: white;">Capacity : 32 Seats</p>
-                        <p class="card-text" style="color: white;">Fuel     : Solar</p>
-                    </div>
-                    <a href="{{ '/product' }}" align="center">
-                        <button type="button" class="btn btn-info">View More Details</button>
-                    </a><br>
-                </div>
-            </a> -->
-        <h2 style="text-align: center;">Mobil Kecil</h2>
+        <h2 style="text-align: center;">Mobil Besar</h2>
         <div class="row justify-content-center" style="margin-top:5%">
             <div class="col-10">
                 <span class="float-left">{{ session('msg') }}</span>
                 @auth
-                    <a href="/product/mobilkecil/create" class="btn btn-secondary float-right">Tambah</a><br /><br />
+                    <a href="/product/mobilbesar/create" class="btn btn-secondary float-right">Tambah</a><br /><br />
                 @endauth
                 <table class="table table-bordered table-striped">
                     <tr>
@@ -124,8 +92,8 @@
                             <td>{{ $d->ketersediaan }}</td>
                             @auth
                                 <td>
-                                    <a href="/product/mobilkecil/{{ $d->id }}/edit" class="btn btn-primary">Edit</a>
-                                    <form method="post" action="/product/mobilkecil/{{ $d->id }}"
+                                    <a href="/product/mobilbesar/{{ $d->id }}/edit" class="btn btn-primary">Edit</a>
+                                    <form method="post" action="/product/mobilbesar/{{ $d->id }}"
                                         style="display:inline" onsubmit="return confirm('Yakin hapus?')">
                                         @csrf
                                         @method('DELETE')

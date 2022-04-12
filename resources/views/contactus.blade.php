@@ -16,9 +16,11 @@
                 <li class="nav-item">
                     <a class="nav-link" href="product">Product</a>
                 </li>
+                @auth
                 <li class="nav-item">
                     <a class="nav-link" href="profile">Profile</a>
                 </li>
+                @endauth
                 <li class="nav-item">
                     <a class="nav-link" href="gallery">Gallery</a>
                 </li>
