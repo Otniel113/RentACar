@@ -76,7 +76,7 @@
                         <td>{{ $d->email }}</td>
                         <td>{{ $d->username }}</td>
                         <td>
-                        <form method="post" action="/review/{{ $d->id }}"
+                        <form method="post" action="/profile/{{ $d->id }}"
                             style="display:inline" onsubmit="return confirm('Yakin hapus?')">
                             @csrf
                             @method('DELETE')
