@@ -14,10 +14,10 @@
                     <a class="nav-link" href="home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="product">Catalog</a>
+                    <a class="nav-link" href="product">Product</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="review">Profile</a>
+                    <a class="nav-link" href="profile">Profile</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="gallery">Gallery</a>

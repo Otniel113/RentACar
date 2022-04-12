@@ -10,7 +10,7 @@ class MemberController extends Controller
     public function index()
     {
         $prods = Member::get();
-        return view('review', ['list' => $prods]);
+        return view('profile', ['list' => $prods]);
     }
 
     public function create()
@@ -25,7 +25,7 @@ class MemberController extends Controller
         $prod->email = $request->email;
         $prod->username = $request->username;
         $prod->save();
-        return redirect('/review')->with('msg', 'Tambah berhasil');
+        return redirect('/profile')->with('msg', 'Tambah berhasil');
     }
 
     public function show($id)
@@ -45,7 +45,7 @@ class MemberController extends Controller
         $prod->email = $request->email;
         $prod->username = $request->username;
         $prod->save();
-        return redirect('/review')->with('msg', 'Edit berhasil');
+        return redirect('/profile')->with('msg', 'Edit berhasil');
     }
 
     public function destroy($id)
@@ -54,6 +54,6 @@ class MemberController extends Controller
         // atau
         /* $prod = Product::find($id);
         $prod->delete(); */
-        return redirect('/review')->with('msg', 'Hapus berhasil');
+        return redirect('/profile')->with('msg', 'Hapus berhasil');
     }
 }

@@ -35,7 +35,7 @@ Route::get('/contactus', 'App\Http\Controllers\ContactUsController@index');
 // Route::get('/product/bus', 'App\Http\Controllers\ProductItemController@index');
 // Route::get('/product/bus', 'App\Http\Controllers\MobilKecilController@index');
 Route::resource('/product/mobilkecil', App\Http\Controllers\MobilKecilController::class);
-Route::resource('/review', App\Http\Controllers\MemberController::class);
+Route::resource('/profile', App\Http\Controllers\MemberController::class);
 Route::get(
     '/product/minibus',
     'App\Http\Controllers\ProductItemController@index'

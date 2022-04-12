@@ -12,7 +12,7 @@
                         <a class="nav-link" href="{{ ('/home') }}" >Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ ('/product') }}">Catalog</a>
+                        <a class="nav-link" href="{{ ('/product') }}">Product</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ ('/review') }}">Review</a>

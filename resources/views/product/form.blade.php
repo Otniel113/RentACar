@@ -14,7 +14,7 @@
                 @csrf
                 <input type="hidden" name="_method" value="{{ $method }}" />
                 <div class="form-group">
-                    <label>Nama</label>
+                    <label>Nama Mobil</label>
                     <input type="text" name="nama_mobil" class="form-control" value="{{ isset($data)?$data->nama_mobil:'' }}" />
                 </div>
                 <div class="form-group">

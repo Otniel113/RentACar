@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Review - Rent A Car</title>
+    <title>Profile - Rent A Car</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
@@ -24,10 +24,10 @@
                     <a class="nav-link" href="home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="product">Catalog</a>
+                    <a class="nav-link" href="product">Product</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="review">Profile</a>
+                    <a class="nav-link" href="profile">Profile</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="gallery">Gallery</a>
@@ -66,7 +66,7 @@
     <div class="container">
 
         <h2 style="text-align: center;">Profile</h2>
-        <div class="row justify-content-center" style="margin-top:13%">
+        <div class="row justify-content-center" style="margin-top:5%">
             <div class="col-10">
                 <span class="float-left">{{ session('msg') }}</span>
                 <table class="table table-bordered table-striped">

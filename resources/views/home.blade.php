@@ -15,10 +15,10 @@
                     <a class="nav-link" href="home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="product">Catalog</a>
+                    <a class="nav-link" href="product">Product</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="review">Profile</a>
+                    <a class="nav-link" href="profile">Profile</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="gallery">Gallery</a>
@@ -57,20 +57,21 @@
         <section>
             <div class="parallax-one">
                 <div class="text">
+                    <h2 style="color: black">Rent A Car</h2>
+                    <!-- <br>
                     <h2 style="color: black">The Best Car Rent</h2>
                     <br>
-                    <h2 style="color: black;">In This Town</h2>
+                    <h2 style="color: black;">In This Town</h2> -->
                 </div>
             </div>
         </section>
 
-        <section>
+        <!-- <section>
             <div class="block">
-                <p><span></span>Our rent alwys give you discount all the time till this fucking world end
-                    asjodbasjfshoisnhfoasfhoasfoupasbfoasbfubasoupfasoufuasoh</p>
+                <p><span></span>The best car rent in Bandung</p>
                 <p class="line-break margin-top-10"></p>
             </div>
-        </section>
+        </section> -->
 
         <section>
             <div class="parallax-two">

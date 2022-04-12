@@ -15,10 +15,10 @@
                         <a class="nav-link" href="{{ ('/home') }}" >Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ ('/product') }}">Catalog</a>
+                        <a class="nav-link" href="{{ ('/product') }}">Product</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ ('/review') }}">Profile</a>
+                        <a class="nav-link" href="{{ ('/profile') }}">Profile</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ ('/gallery') }}">Gallery</a>
@@ -80,7 +80,8 @@
                     </a><br>
                 </div>
             </a> -->
-            <div class="row justify-content-center" style="margin-top:13%">
+            <h2 style="text-align: center;">Mobil Kecil</h2>
+            <div class="row justify-content-center" style="margin-top:5%">
             <div class="col-10">
                 <span class="float-left">{{ session('msg') }}</span>
                 <a href="/product/mobilkecil/create" class="btn btn-secondary float-right">Tambah</a><br /><br />

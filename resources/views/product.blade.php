@@ -15,10 +15,10 @@
                     <a class="nav-link" href="home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="product">Catalog</a>
+                    <a class="nav-link" href="product">Product</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="review">Profile</a>
+                    <a class="nav-link" href="profile">Profile</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="gallery">Gallery</a>
@@ -57,7 +57,7 @@
 
     <div class="container bg-light rounded">
         <div class="h4 font-weight-bold text-center py-3">
-            <h2>Our Catalog :</h2>
+            <h2>Our Product :</h2>
         </div>
 
         <!-- Content List -->
