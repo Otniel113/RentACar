@@ -45,4 +45,4 @@ Route::resource(
     '/product/minibus',
     App\Http\Controllers\MinibusController::class
 );
-Route::resource('/profile', App\Http\Controllers\MemberController::class);
+Route::resource('/profile', App\Http\Controllers\MemberController::class)->middleware('auth');
