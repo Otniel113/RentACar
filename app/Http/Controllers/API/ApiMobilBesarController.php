@@ -4,8 +4,9 @@ namespace App\Http\Controllers\API;
 
 use Illuminate\Http\Request;
 use App\Models\MobilBesar;
+use App\Http\Controllers\Controller as Controller;
 
-class ApiMobilBesarController
+class ApiMobilBesarController extends Controller
 {
     public function index()
     {

@@ -4,8 +4,9 @@ namespace App\Http\Controllers\API;
 
 use Illuminate\Http\Request;
 use App\Models\Member;
+use App\Http\Controllers\Controller as Controller;
 
-class ApiMemberController
+class ApiMemberController extends Controller
 {
     public function index()
     {
