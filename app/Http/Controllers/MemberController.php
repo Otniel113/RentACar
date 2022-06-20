@@ -15,7 +15,6 @@ class MemberController extends Controller
 
     public function create()
     {
-        
     }
 
     public function store(Request $request)
@@ -24,6 +23,7 @@ class MemberController extends Controller
         $prod->name = $request->name;
         $prod->email = $request->email;
         $prod->username = $request->username;
+        $prod->password = $request->password;
         $prod->save();
         return redirect('/profile')->with('msg', 'Tambah berhasil');
     }
@@ -35,7 +35,6 @@ class MemberController extends Controller
 
     public function edit($id)
     {
-    
     }
 
     public function update(Request $request, $id)
@@ -44,6 +43,7 @@ class MemberController extends Controller
         $prod->name = $request->name;
         $prod->email = $request->email;
         $prod->username = $request->username;
+        $prod->password = $request->password;
         $prod->save();
         return redirect('/profile')->with('msg', 'Edit berhasil');
     }

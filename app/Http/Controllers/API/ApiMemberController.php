@@ -20,7 +20,7 @@ class ApiMemberController extends Controller
             'title' => 'Tambah',
             'method' => 'POST',
             'action' => 'profile'
-            ]);
+        ]);
     }
 
     public function store(Request $request)
@@ -29,6 +29,7 @@ class ApiMemberController extends Controller
         $prod->name = $request->name;
         $prod->email = $request->email;
         $prod->username = $request->username;
+        $prod->password = $request->password;
         $prod->save();
         return $prod;
     }
@@ -45,7 +46,7 @@ class ApiMemberController extends Controller
             'method' => 'PUT',
             'action' => "profile/$id",
             'data' => Member::find($id)
-            ]);
+        ]);
     }
 
     public function update(Request $request, $id)
@@ -54,6 +55,7 @@ class ApiMemberController extends Controller
         $prod->name = $request->name;
         $prod->email = $request->email;
         $prod->username = $request->username;
+        $prod->password = $request->password;
         $prod->save();
         return $prod;
     }

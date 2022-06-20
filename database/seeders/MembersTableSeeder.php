@@ -13,34 +13,40 @@ class MembersTableSeeder extends Seeder
      */
     public function run()
     {
+        $password = bcrypt('password');
         \App\Models\Member::create([
             'name' => 'Otniel Abiezer',
             'email' => 'otniel@gmail.com',
-            'username' => 'otnielabiezer'
+            'username' => 'otnielabiezer',
+            'password' => $password
         ]);
 
         \App\Models\Member::create([
             'name' => 'Winico Fazry',
             'email' => 'winico@gmail.com',
-            'username' => 'winicofazry'
+            'username' => 'winicofazry',
+            'password' => $password
         ]);
 
         \App\Models\Member::create([
             'name' => 'Gilang M Rizky',
             'email' => 'gilang@gmail.com',
-            'username' => 'gilangrizky'
+            'username' => 'gilangrizky',
+            'password' => $password
         ]);
 
         \App\Models\Member::create([
             'name' => 'Aulia Arief',
             'email' => 'aulia@gmail.com',
-            'username' => 'auliaarief'
+            'username' => 'auliaarief',
+            'password' => $password
         ]);
 
         \App\Models\Member::create([
             'name' => 'Rick Astley',
             'email' => 'rickastley@gmail.com',
-            'username' => 'rickastley'
+            'username' => 'rickastley',
+            'password' => $password
         ]);
     }
 }
