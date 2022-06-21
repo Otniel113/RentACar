@@ -43,21 +43,23 @@ class ApiLoginController extends Controller
             'email' => $request->email,
             'password' => $request->password,
         ])) {
-            $user = auth()->user();
+            $member_id = auth()->guard('member')->user()->id;
 
-            return ("Login Berhasil");
+            return (array('member_id' => $member_id, 'status_login' => 'Login Berhasil'));
         } else {
-            return ("Login Gagal");
+            return (array('member_id' => -1, 'status_login' => 'Login Gagal'));
         }
     }
 
 
     public function logout(Request $request)
     {
-        Auth::logout();
-        $request->session()->invalidate();
-        $request->session()->regenerateToken();
+        // Auth::logout();
+        // $request->session()->invalidate();
+        // $request->session()->regenerateToken();
+        Auth::guard('member')->logout();
 
-        return redirect('/');
+        return (array('status_logout' => 'Logout Berhasil'));
+        // return ("Logout Berhasil");
     }
 }
