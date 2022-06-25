@@ -55,7 +55,7 @@ class ApiMemberController extends Controller
         $prod->name = $request->name;
         $prod->email = $request->email;
         $prod->username = $request->username;
-        $prod->password = $request->password;
+        $prod->password = bcrypt($request->password);
         $prod->save();
         return $prod;
     }
