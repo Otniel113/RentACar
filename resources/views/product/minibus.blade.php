@@ -26,6 +26,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ '/profile' }}">Profile</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ '/booking' }}">Booking</a>
+                </li>
                 @endauth
                 <li class="nav-item">
                     <a class="nav-link" href="{{ '/contactus' }}">Contact Us</a>
@@ -68,6 +71,7 @@
                 @endauth
                 <table class="table table-bordered table-striped">
                     <tr>
+                        <th>Id</th>
                         <th>Nama Mobil</th>
                         <th>No. Polisi</th>
                         <th>Driver</th>
@@ -79,6 +83,7 @@
                     </tr>
                     @foreach ($list as $d)
                         <tr>
+                            <td>{{ $d->id }}</td>
                             <td>{{ $d->nama_mobil }}</td>
                             <td>{{ $d->no_polisi }}</td>
                             <td>{{ $d->driver }}</td>

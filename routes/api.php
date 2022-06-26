@@ -22,6 +22,7 @@ Route::resource('/product/mobilkecil', App\Http\Controllers\API\ApiMobilKecilCon
 Route::resource('/profile', App\Http\Controllers\API\ApiMemberController::class);
 Route::resource('/product/mobilbesar', App\Http\Controllers\API\ApiMobilBesarController::class);
 Route::resource('/product/minibus', App\Http\Controllers\API\ApiMinibusController::class);
+Route::resource('/booking', App\Http\Controllers\API\ApiBookingController::class);
 Route::post('/login', [App\Http\Controllers\API\ApiLoginController::class, 'authenticate']);
 Route::post('/logout', [App\Http\Controllers\API\ApiLoginController::class, 'logout']);
 Route::post('/register', [App\Http\Controllers\API\ApiRegisterController::class, 'store']);

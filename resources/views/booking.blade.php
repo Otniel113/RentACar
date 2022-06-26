@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Profile - Rent A Car</title>
+    <title>Booking - Rent A Car</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
@@ -62,32 +62,43 @@
 
     <div class="container">
 
-        <h2 style="text-align: center;">Profile</h2>
+        <h2 style="text-align: center;">Booking</h2>
         <div class="row justify-content-center" style="margin-top:5%">
             <div class="col-10">
                 <span class="float-left">{{ session('msg') }}</span>
                 <table class="table table-bordered table-striped">
                     <tr>
-                        <th>Id</th>
-                        <th>Name</th>
-                        <th>E-mail</th>
-                        <th>Username</th>
+                        <th>ID Booking</th>
+                        <th>ID Mobil</th>
+                        <th>Nama Mobil</th>
+                        <th>Jenis Mobil</th>
+                        <th>Wisata</th>
+                        <th>ID Member</th>
+                        <th>Nama Member</th>
+                        <th>Status</th>
                         <th>Aksi</th>
                     </tr>
                     @foreach($list as $d)
                     <tr>
                         <td>{{ $d->id }}</td>
-                        <td>{{ $d->name }}</td>
-                        <td>{{ $d->email }}</td>
-                        <td>{{ $d->username }}</td>
-                        <td>
-                        <form method="post" action="/profile/{{ $d->id }}"
-                            style="display:inline" onsubmit="return confirm('Yakin hapus?')">
-                            @csrf
-                            @method('DELETE')
-                            <button class="btn btn-danger">Hapus</button>
-                        </form>
-                        </td>
+                        <td>{{ $d->id_mobil }}</td>
+                        <td>{{ $d->nama_mobil }}</td>
+                        <td>{{ $d->jenis_mobil }}</td>
+                        <td>{{ $d->wisata }}</td>
+                        <td>{{ $d->id_member }}</td>
+                        <td>{{ $d->nama_member }}</td>
+                        <td>{{ $d->status }}</td>
+                        @auth
+                            <td>
+                                <a href="/booking/{{ $d->id }}/edit" class="btn btn-primary">Edit</a>
+                                <form method="post" action="/booking/{{ $d->id }}"
+                                    style="display:inline" onsubmit="return confirm('Yakin hapus?')">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button class="btn btn-danger">Hapus</button>
+                                </form>
+                            </td>
+                        @endauth
                     </tr>
                     @endforeach
                 </table>

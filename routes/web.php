@@ -46,3 +46,4 @@ Route::resource(
     App\Http\Controllers\MinibusController::class
 );
 Route::resource('/profile', App\Http\Controllers\MemberController::class)->middleware('auth');
+Route::resource('/booking', App\Http\Controllers\BookingController::class)->middleware('auth');

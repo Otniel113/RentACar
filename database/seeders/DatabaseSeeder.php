@@ -18,5 +18,6 @@ class DatabaseSeeder extends Seeder
         $this->call(AdminTableSeeder::class);
         $this->call(MobilbesarsTableSeeder::class);
         $this->call(MinibussTableSeeder::class);
+        $this->call(BookingsTableSeeder::class);
     }
 }
