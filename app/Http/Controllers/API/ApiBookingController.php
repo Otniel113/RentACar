@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Booking;
 use App\Http\Controllers\Controller as Controller;
 
-class BookingController extends Controller
+class ApiBookingController extends Controller
 {
     /**
      * Display a listing of the resource.
